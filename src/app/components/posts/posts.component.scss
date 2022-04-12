@@ -1,0 +1,18 @@
+.posts {
+    position: absolute;
+    margin-top: 40px;
+    padding: 20px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid gray;
+    background: rgb(235, 235, 235);
+    box-shadow: 12px 12px 2px 1px rgb(223, 223, 223);
+
+    .btn {
+        margin: 20px 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

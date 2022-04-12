@@ -1,0 +1,27 @@
+<div class="modal-hover">
+    <div class="modal-content">
+        <form class="form" (ngSubmit)="submit()" [formGroup]="postForm">
+            <div class="input-group">
+                <label for="title">Title: </label>
+                <input type="text" id="title" formControlName="title">
+            </div>
+            <div class="input-group">
+                <label for="title">Text: </label>
+                <input type="text" id="title" formControlName="text">
+            </div>
+            <div class="input-group">
+                <label for="title">Image url: </label>
+                <input type="text" id="title" formControlName="image">
+            </div>
+            <div class="form-buttons">
+                <button 
+                    type="submit" 
+                    [disabled]="!postForm.valid" 
+                    class="btn btn-primary"
+                >
+                {{type}}</button>
+                <button type="button" class="btn btn-danger" (click)="close()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.card-img-top {
+    height: 330px;
+    object-fit: cover;
+}
+
+.buttons {
+    margin: 5px;
+    & button:first-child {
+        margin-right: 10px;
+    }
+}
